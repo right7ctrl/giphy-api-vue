@@ -1,6 +1,6 @@
 # vue-giphy-api
 
-> A Vue.Js project that uses giphy api
+> A Vue.Js project that uses giphy api for search and list gifs
 
 ## Build Setup
 
