@@ -22,13 +22,13 @@
       makeQuery(query){
         console.log(query);
         this.gifs = [];
-        fetch('http://api.giphy.com/v1/gifs/search?q='+query+'&api_key=i6TSCMubT4uvYxvrZfWdJAFDdyCZ5Y0n')
+        fetch('http://api.giphy.com/v1/gifs/search?q='+query+'&api_key={api_key_here}')
           .then((res) => { return res.json(); })
           .then((res) => { this.gifs = res.data; });
       },
     },
     created() {
-      fetch('http://api.giphy.com/v1/gifs/trending?api_key=i6TSCMubT4uvYxvrZfWdJAFDdyCZ5Y0n')
+      fetch('http://api.giphy.com/v1/gifs/trending?api_key={api_key_here}')
         .then((res) => { return res.json(); })
         .then((res) => { this.gifs = res.data; });
     }
